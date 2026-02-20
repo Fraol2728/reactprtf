@@ -40,7 +40,7 @@ A fast, modern, and responsive developer portfolio website built using **React**
    cd react-vite-portfolio
    ````
 
-2. **Install dependencies**
+2. **Install dependencies (from the repo root)**
 
    ```bash
    npm install
@@ -52,11 +52,14 @@ A fast, modern, and responsive developer portfolio website built using **React**
    npm run dev
    ```
 
+
+> This repo uses npm workspaces. The web app lives in `client/`, and root scripts (`npm run dev`, `npm run build`) forward to that workspace.
+
 4. **Customize your content**
 
-   * Update `/src/data/projects.js` with your projects
-   * Update `/src/data/skills.js` with your tech stack
-   * Modify `/src/components` and `/src/pages` for layout or section changes
+   * Main application source is in `client/src`
+   * Modify `client/src/components` and `client/src/pages` for layout/section changes
+   * Static assets are in `client/public`
 
 ## 🏗️ Build for Production
 
