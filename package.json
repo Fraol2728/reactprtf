@@ -1,0 +1,13 @@
+{
+  "name": "react-portfolio-monorepo",
+  "private": true,
+  "workspaces": [
+    "client"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w client",
+    "build": "npm run build -w client",
+    "preview": "npm run preview -w client",
+    "lint": "npm run lint -w client"
+  }
+}
